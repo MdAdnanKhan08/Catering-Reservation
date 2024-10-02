@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="form-wrapper">
+            <div id="login-form">
+                <h2>Login</h2>
+                <form onsubmit="login(event)">
+                    <div class="form-group">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+
+                <div class="google-signin">
+                    <p>Or log in with:</p>
+                    <button id="google-signin-btn">Sign in with Google</button>
+                </div>
+
+                <p>Don't have an account? <span id="show-signup">Sign Up</span></p>
+            </div>
+
+            <div id="signup-form" style="display: none;">
+                <h2>Sign Up</h2>
+                <form onsubmit="signup(event)">
+                    <div class="form-group">
+                        <label for="signup-name">Name:</label>
+                        <input type="text" id="signup-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email:</label>
+                        <input type="email" id="signup-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password:</label>
+                        <input type="password" id="signup-password" required>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account? <span id="show-login">Login</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

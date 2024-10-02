@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Reservation Order Form</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Catering Reservation Order Form</h2>
+        <form id="reservation-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" placeholder="Enter event name" required>
+            </div>
+            <!-- <div class="form-group">
+                <label for="event-name">Event Name</label>
+                <select id="event-name" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="inside">Wedding</option>
+                    <option value="outside">Iftar</option>
+                    <option value="no-idea">Celebrations</option>
+                </select>
+            </div> -->
+            <!-- Updated Event Date section -->
+            <div class="form-group">
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" required>
+            </div>
+            <div class="form-group">
+                <label for="event-location">Event Location:</label>
+                <input type="text" id="event-location" placeholder="Enter event location" required>
+            </div>
+            <div class="form-group">
+                <label for="serving-time">Serving Time:</label>
+                <input type="time" id="serving-time" required>
+            </div>
+            <div class="form-group">
+                <label for="party-size">Party Size:</label>
+                <input type="number" id="party-size" placeholder="Enter party size" required>
+            </div>
+            <div class="form-group">
+                <label for="where">Where:</label>
+                <select id="where" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="inside">Inside</option>
+                    <option value="outside">Outside</option>
+                    <option value="no-idea">I have no idea</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="order.js"></script>
+</body>
+</html>
